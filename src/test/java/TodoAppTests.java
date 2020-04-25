@@ -20,7 +20,7 @@ import app.main.todo.entities.Todo;
 import app.main.todo.generic.utils.GenericUtils;
 import app.main.todo.repositories.TodoRepository;
 
-public class LibraryTest {
+public class TodoAppTests {
 	
 	
     @BeforeClass
