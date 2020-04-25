@@ -1,0 +1,20 @@
+java -jar todo-application.jar
+java -jar todo-application.jar --csv-file todo.csv
+java -jar todo-application.jar --csv-file todo.csv --display
+java -jar todo-application.jar --csv-file todo.csv --add-todo --display
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text Task-1 --display
+java -jar todo-application.jar --csv-file todo.csv --add-todo --display
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "I want to finish my home work by Sunday" --display
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --completed --display
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/01/1992 --completed --display
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display --priority 1
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display --priority 10
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display --priority -10
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display --priority 2 --show-category Work
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --show-category Work --sort-by-date
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --show-category Work --sort-by-date --sort-by-priority
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --show-category Work --sort-by-date --sort-by-priority --show-incomplete
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --sort-by-date --sort-by-priority  --show-incomplete
+java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --sort-by-date --sort-by-priority  --complete-todo 1,2,3,342
+java -jar todo-application.ja --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --sort-by-date --sort-by-priority  --complete-todo 1,2,3,4
