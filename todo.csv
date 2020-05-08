@@ -1,0 +1,25 @@
+id,text,completed,due,priority,category
+1,I want to brush my teeth,true,,3
+2,I want to finish my home work by Sunday,true,,3
+3,My work is done,true,,3
+4,My work is done,true,2/10/1992,3
+5,My work is done,true,2/2/1992,3,Work
+6,My work is done,true,2/22/1992,1,Work
+7,My work is done,true,2/23/1992,2,Work
+8,My work is done,true,2/14/1992,2,Work
+9,My work is done,true,2/1/1992,2,Work
+10,My work is done,true,2/16/1992,2,Work
+11,My work is done,true,2/16/1992,2,Work
+12,My work is done,true,2/1/1992,2,Work
+13,I want to brush my teeth,false,,3
+14,I want to code everyday,true,2/4/2020,1,Office
+15,I want to brush my teeth,false,,3
+16,I want to brush my teeth,false,,3
+17,I want to code everyday,true,2/4/2020,1,Office
+18,I want to brush my teeth,false,,3
+19,I want to finish my home work by Sunday,false,,3,
+20,My work is done,true,,3,
+21,My work is done,true,2/10/1992,3,
+22,My work is done,true,2/16/1992,2,Work
+23,My work is done,true,2/2/1992,3,Work
+24,My work is done,true,2/1/1992,2,Work

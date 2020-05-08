@@ -23,7 +23,7 @@ public class GenericUtils {
 
 
 
-	public final static String DUE_DATE_FORMAT = "dd/MM/yyyy";
+	public final static String DUE_DATE_FORMAT = "MM/dd/yyyy";
 
 	public static List<String> getHeaders() {
 		return Arrays.asList("id", "text", "completed", "due", "priority", "category");
@@ -70,6 +70,7 @@ public class GenericUtils {
 
 		List<Todo> todoList = CSVReaderUtil.fetchRowsAsTodoList(file);
 
+		
 		if (sort_by_priority) {
 			Collections.sort(todoList, new TodoPriorityComparator());
 		}
@@ -115,7 +116,12 @@ public class GenericUtils {
 	public static String getIdTrackerFileName(String csvFilePath) {
 		Path path = Paths.get(csvFilePath);
 		Path fileName = path.getFileName();
-		return path.getParent().toString() + "/" + String.format("id_%s.txt", fileName.toString().split("\\.")[0]);
+
+		if (path.getParent() != null) {
+			return path.getParent().toString() + "/" + String.format("id_%s.txt", fileName.toString().split("\\.")[0]);
+		} else {
+			return String.format("id_%s.txt", fileName.toString().split("\\.")[0]);
+		}
 	}
 	
 	public static String getAlphaNumericString(int n) {

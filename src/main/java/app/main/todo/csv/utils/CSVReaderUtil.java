@@ -58,7 +58,8 @@ public class CSVReaderUtil {
 	public static List<Todo> fetchRowsAsTodoList(String file) {
 		try {
 			return fetchRows(file)
-					.stream().map(todo -> new Todo(Integer.parseInt(todo[0]), todo[1], Boolean.parseBoolean(todo[2]),
+					.stream()
+					.map(todo -> new Todo(Integer.parseInt(todo[0]), todo[1], Boolean.parseBoolean(todo[2]),
 							todo[3], Integer.parseInt(todo[4]), todo.length >= 6 ? todo[5] : ""))
 					.collect(Collectors.toList());
 		} catch (Exception e) {

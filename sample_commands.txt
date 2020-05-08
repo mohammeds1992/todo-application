@@ -1,20 +1,24 @@
 java -jar todo-application.jar
-java -jar todo-application.jar --csv-file todo.csv
-java -jar todo-application.jar --csv-file todo.csv --display
-java -jar todo-application.jar --csv-file todo.csv --add-todo --display
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text Task-1 --display
-java -jar todo-application.jar --csv-file todo.csv --add-todo --display
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "I want to finish my home work by Sunday" --display
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --completed --display
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/01/1992 --completed --display
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display --priority 1
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display --priority 10
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display --priority -10
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 22/2/1992 --completed  --category Work --display --priority 2 --show-category Work
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --show-category Work --sort-by-date
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --show-category Work --sort-by-date --sort-by-priority
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --show-category Work --sort-by-date --sort-by-priority --show-incomplete
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --sort-by-date --sort-by-priority  --show-incomplete
-java -jar todo-application.jar --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --sort-by-date --sort-by-priority  --complete-todo 1,2,3,342
-java -jar todo-application.ja --csv-file todo.csv --add-todo --todo-text "My work is done"  --due 23/1/1992 --completed  --category Work --display --priority 2 --sort-by-date --sort-by-priority  --complete-todo 1,2,3,4
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv 
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --display
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --display
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "I want to brush my teeth" --display
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "I want to code everyday" --due 2/4/2020 --completed --category Office --priority 1 --display
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "I want to workout" --due 3/23/2020 --category Home --priority 10 --display --show-incomplete --sort-by-priority
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "I want to brush my teeth" --display --sort-by-priority 
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --complete-todo 4,5 --display --sort-by-date
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --display
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "I want to finish my home work by Sunday" --display
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --completed --display
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/10/1992 --completed --display
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/2/1992 --completed  --category Work --display
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/22/1992 --completed  --category Work --display --priority 1
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/22/1992 --completed  --category Work --display --priority 10
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/23/1992 --completed  --category Work --display --priority -10
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/23/1992 --completed  --category Work --display --priority 2 --show-category Work
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/14/1992 --completed  --category Work --display --priority 2 --show-category Work --sort-by-date
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/1/1992 --completed  --category Work --display --priority 2 --show-category Work --sort-by-date --sort-by-priority
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/16/1992 --completed  --category Work --display --priority 2 --show-category Work --sort-by-date --sort-by-priority --show-incomplete
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/16/1992 --completed  --category Work --display --priority 2 --sort-by-date --sort-by-priority  --show-incomplete
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due 2/1/1992 --completed  --category Work --display --priority 2 --sort-by-date --sort-by-priority  --complete-todo 1,2,3,342
+java -jar todo-application.jar --csv-file /Users/shoaibmohammed/remote/todo-application/todo.csv  --add-todo --todo-text "My work is done"  --due  2/1/1992 --completed  --category Work --display --priority 2 --sort-by-date --sort-by-priority  --complete-todo 1,2,3,4

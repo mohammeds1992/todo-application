@@ -43,22 +43,31 @@ public class Driver {
 				throw new MandatoryParameterException("csv-file");
 			}
 			
+			// Setup
 			GenericUtils.setup(csv_file);
+
+			
+			// Validation of arguments
 
 
 			if (cliArgs.switchPresent("--complete-todo")) {
 
 				
-					List<Integer> completedTodoIds = Stream.of(completed_todo.split(",")).map(Integer::parseInt)
+					// 2,3,4 -> [2,3,4]
+					List<Integer> completedTodoIds = Stream.of(completed_todo.split(","))
+							.map(Integer::parseInt)
 							.collect(Collectors.toList());
 
-					List<Integer> ints = Files.lines(Paths.get(GenericUtils.getIdTrackerFileName(csv_file))).map(Integer::parseInt)
+					List<Integer> ints = Files.lines(Paths.get(GenericUtils.getIdTrackerFileName(csv_file)))
+							.map(Integer::parseInt)
 							.collect(Collectors.toList());
 
+					// current is id which is being used so far
 					Integer currentId = ints.get(0);
 
 					for (int id : completedTodoIds) {
 
+						// check if todo is valid
 						if (id < 0 || id > currentId) {
 							throw new InvalidTodoIdException();
 						}
@@ -101,6 +110,7 @@ public class Driver {
 			}
 
 
+			// Actual Execution 
 			if (add_todo) {
 				TodoRepository.addTodo(csv_file, todo_text, due, priority, category, completed);
 			}
@@ -119,7 +129,6 @@ public class Driver {
 				GenericUtils.displayTodos(csv_file, show_category, show_incomplete, sort_by_priority, sort_by_date);
 			}
 		} catch (Exception e) {
-			System.out.println(e);
 			System.out.println("Aborting the program. Exception occured: " + e.getMessage());
 		}
 	}
